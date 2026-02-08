@@ -86,6 +86,13 @@
       width: 200px;
       border-radius: 16px;
       margin-top: 10px;
+      animation: bounce 0.6s ease;
+    }
+
+    @keyframes bounce {
+      0% { transform: scale(0.5); opacity: 0; }
+      50% { transform: scale(1.2); opacity: 1; }
+      100% { transform: scale(1); opacity: 1; }
     }
 
     .heart {
@@ -113,7 +120,7 @@
 </head>
 <body>
 
-  <!-- Optional music -->
+  <!-- Optional background music -->
   <audio autoplay loop>
     <source src="music.mp3" type="audio/mpeg">
   </audio>
@@ -145,7 +152,7 @@
         I’m really excited to see where this goes —  
         maybe starting with Oregon and a coffee stop ☕🏔️
       </p>
-      <img src="her.jpg" alt="Alexis photo">
+      <img src="alexis.jpeg" alt="Alexis photo">
     </div>
   </div>
 
@@ -173,7 +180,7 @@
       no.style.top = y + "px";
     }
 
-    // Playful NO click message
+    // Playful NO click
     function noClicked() {
       alert("Haha, nice try! You can't say NO 😄");
     }
